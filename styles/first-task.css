@@ -1,1 +1,47 @@
 
+body {
+    background-color: blue;
+    font-family: "Rubik";
+  }
+
+.name {
+    font-family: "verdana";
+    font-size: 40px;
+    color: red;
+}
+
+.grid-container {
+    display: grid;
+    height: 1200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .item2 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .item3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .item4 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
